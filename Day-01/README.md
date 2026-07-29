@@ -1,4 +1,4 @@
-# Day 1 – Verilog AND Gate
+# Day 1 - Verilog AND Gate
 
 ## Objective
 
@@ -6,9 +6,9 @@ Design and simulate a 2-input AND gate using Verilog HDL.
 
 ## Files
 
-- `and_gate.v` – AND gate design
-- `and_gate_tb.v` – Testbench
-- `and_gate.vcd` – Waveform generated after simulation
+- `and_gate.v` - AND gate design
+- `and_gate_tb.v` - Testbench
+- `and_gate.vcd` - Simulation waveform
 
 ## Truth Table
 
@@ -31,7 +31,7 @@ iverilog -o and_gate and_gate.v and_gate_tb.v
 vvp and_gate
 ```
 
-## Open Waveform
+## View Waveform
 
 ```bash
 gtkwave and_gate.vcd
@@ -42,4 +42,4 @@ gtkwave and_gate.vcd
 - Learned the structure of a Verilog module.
 - Wrote a testbench.
 - Simulated the design using Icarus Verilog.
-- Viewed the waveform in GTKWave.
+- Viewed waveforms in GTKWave.

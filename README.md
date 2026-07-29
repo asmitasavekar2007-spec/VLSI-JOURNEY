@@ -1,10 +1,10 @@
-# 🚀 VLSI Journey
+# VLSI Journey
 
-Welcome to my VLSI learning journey!
+Welcome to my VLSI learning journey.
 
 This repository documents my progress from learning basic digital logic to designing complete ASICs using industry-standard open-source tools.
 
-## 🎯 Goal
+## Goal
 
 Become a VLSI Engineer by mastering:
 
@@ -17,7 +17,7 @@ Become a VLSI Engineer by mastering:
 - Physical Design
 - ASIC Design Flow
 
-## 🛠️ Tools Used
+## Tools Used
 
 - Visual Studio Code
 - Git & GitHub
@@ -25,16 +25,36 @@ Become a VLSI Engineer by mastering:
 - GTKWave
 - Yosys
 - OpenROAD
-- Ubuntu (WSL)
+- Ubuntu (WSL2)
 - Docker
 
-## 📚 Learning Progress
+## Learning Progress
 
 | Day | Topic | Status |
-|------|-------|--------|
-| Day 1 | Verilog AND Gate | ✅ Completed |
+|-----|-------|--------|
+| Day 1 | Verilog AND Gate | Completed |
 
 More projects will be added as I continue my VLSI journey.
 
----
-⭐ Thank you for visiting my repository!
+## Repository Structure
+
+```text
+VLSI-JOURNEY
+│
+├── README.md
+├── Day-01
+├── Day-02
+├── Projects
+└── Notes
+```
+
+## Future Topics
+
+- Combinational Logic
+- Sequential Logic
+- Finite State Machines
+- RTL Design
+- Verification
+- Timing Analysis
+- Physical Design
+- Complete ASIC Flow
