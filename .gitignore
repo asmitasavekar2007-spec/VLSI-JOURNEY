@@ -1,0 +1,12 @@
+# Compiled simulation executables
+and_gate
+
+# Waveform files
+*.vcd
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.log
+*.out
