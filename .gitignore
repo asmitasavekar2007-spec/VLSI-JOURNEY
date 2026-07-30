@@ -1,12 +1,17 @@
-# Compiled simulation executables
+# Icarus Verilog compiled executables
 and_gate
+or_gate
+not_gate
+nand_gate
+nor_gate
+xor_gate
+xnor_gate
 
 # Waveform files
 *.vcd
 
+# Log files
+*.log
+
 # VS Code settings
 .vscode/
-
-# Temporary files
-*.log
-*.out
