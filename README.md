@@ -1,117 +1,28 @@
-# 90-Day VLSI Journey
+# Verilog HDL Projects
 
-Welcome to my **90-Day VLSI Learning Journey**.
-
-This repository documents my progress as I learn **Digital Electronics, Verilog HDL, RTL Design, FPGA Development, and ASIC Design** from scratch. It contains my daily notes, Verilog programs, simulations, and learning outcomes.
+A collection of Verilog HDL projects developed while learning Digital Electronics and VLSI Design. This repository contains theory, RTL design, testbenches, waveform simulations, and daily practice exercises.
 
 ---
 
-## Goal
+## About This Repository
 
-My objective is to build a strong foundation in:
+This repository documents my day-by-day learning journey in Verilog HDL. Every project is written, simulated, and verified using industry-standard tools.
 
-- Digital Electronics
-- Boolean Algebra
-- Verilog HDL
-- RTL Design
-- FPGA Design Flow
-- ASIC Design Flow
-- Computer Architecture Basics
-- VLSI Design
-
-By the end of this journey, I aim to confidently design, simulate, and verify digital circuits while building a professional GitHub portfolio.
-
----
-
-## Tools Used
-
-- Visual Studio Code
-- Icarus Verilog
-- GTKWave
-- Git
-- GitHub
-
----
-
-# Learning Progress
-
-## Day 1 – Verilog Basics & AND Gate
-
-### Topics Covered
-
-- Introduction to Verilog HDL
-- ASIC Design Flow
-- Installing Icarus Verilog
-- Installing GTKWave
-- Writing the First Verilog Program
-- AND Gate
-- Testbench
-- Simulation
-- GTKWave Verification
-- GitHub Setup
-
----
-
-## Day 2 – Basic Logic Gates
-
-### Topics Covered
-
-- Binary Number System
-- Binary Arithmetic
-- Boolean Algebra Basics
-- AND Gate
-- OR Gate
-- NOT Gate
-- NAND Gate
-- NOR Gate
-- XOR Gate
-- XNOR Gate
-- Verilog Implementation
-- Testbench
-- GTKWave Simulation
-
----
-
-## Day 3 – Half Adder
-
-### Topics Covered
-
-- Binary Addition
-- Half Adder
-- Truth Table
+Each topic includes:
+- Theory
+- Truth Tables
 - Boolean Expressions
-- XOR and AND Operations
-- Half Adder Verilog Code
+- Verilog HDL Code
 - Testbench
 - GTKWave Simulation
-- Boolean Algebra Laws
-- De Morgan's Theorem
-- XOR & XNOR Expressions
-
----
-
-## Day 4 – Full Adder
-
-### Topics Covered
-
-- Limitation of Half Adder
-- Full Adder
-- Carry In (Cin)
-- Carry Out (Cout)
-- Full Adder Truth Table
-- Boolean Equations
-- Full Adder using Two Half Adders
-- Verilog Implementation
-- Testbench
-- GTKWave Simulation
-- Boolean Expression Practice
+- README Documentation
 
 ---
 
 # Repository Structure
 
-```text
-90-Day-VLSI-Journey
+```
+Verilog-HDL-Projects
 │
 ├── Day-01
 │   ├── and_gate.v
@@ -120,7 +31,6 @@ By the end of this journey, I aim to confidently design, simulate, and verify di
 │
 ├── Day-02
 │   ├── logic_gates
-│   ├── testbenches
 │   └── README.md
 │
 ├── Day-03
@@ -133,97 +43,160 @@ By the end of this journey, I aim to confidently design, simulate, and verify di
 │   ├── full_adder_tb.v
 │   └── README.md
 │
+├── Day-05
+│   ├── mux2x1.v
+│   ├── mux2x1_tb.v
+│   ├── mux4x1.v
+│   ├── mux4x1_tb.v
+│   └── README.md
+│
+├── Day-06
+│   ├── decoder2x4.v
+│   ├── decoder2x4_tb.v
+│   ├── encoder4x2.v
+│   ├── encoder4x2_tb.v
+│   ├── demux1x4.v
+│   ├── demux1x4_tb.v
+│   └── README.md
+│
 └── README.md
 ```
 
 ---
 
-# Skills Learned So Far
+# Topics Covered
 
-- Verilog HDL Basics
-- Writing Modules
-- Using Inputs and Outputs
-- Continuous Assignments
+## Day 01
+- Introduction to Verilog HDL
+- AND Gate
+- Testbench
+- Simulation
+
+---
+
+## Day 02
+- Basic Logic Gates
+- AND
+- OR
+- NOT
+- NAND
+- NOR
+- XOR
+- XNOR
+
+---
+
+## Day 03
+- Half Adder
+- Truth Table
+- Boolean Expression
+- Verilog Implementation
+- Testbench
+- GTKWave Simulation
+
+---
+
+## Day 04
+- Full Adder
+- Truth Table
+- Boolean Expression
+- Verilog Implementation
+- Testbench
+- GTKWave Simulation
+
+---
+
+## Day 05
+- 2:1 Multiplexer
+- 4:1 Multiplexer
+- Karnaugh Map (K-Map) Basics
+- Gray Code
+- Boolean Simplification
+
+---
+
+## Day 06
+- 2:4 Decoder
+- 3:8 Decoder (Theory)
+- 4:2 Encoder
+- 1:4 Demultiplexer (DEMUX)
+
+---
+
+# Software Used
+
+- Visual Studio Code
+- Verilog HDL
+- Icarus Verilog
+- GTKWave
+- Git
+- GitHub
+
+---
+
+# Skills Learned
+
+- Verilog HDL Programming
+- RTL Design
 - Boolean Algebra
-- Binary Arithmetic
 - Logic Gates
-- Half Adder Design
-- Full Adder Design
-- Testbench Development
-- Digital Simulation
-- GTKWave Analysis
-- Git & GitHub Workflow
-
----
-
-# Progress Tracker
-
-| Day | Topic | Status |
-|----:|----------------------------|:------:|
-| 1 | Verilog Basics & AND Gate | Completed |
-| 2 | Basic Logic Gates | Completed |
-| 3 | Half Adder | Completed |
-| 4 | Full Adder | Completed |
-| 5 | Multiplexer (MUX) | In Progress |
-| 6 | Decoder | Planned |
-| 7 | Encoder | Planned |
-| 8 | Comparator | Planned |
-| 9 | Multiplexer Applications | Planned |
-| 10 | Combinational Logic Revision | Planned |
-
----
-
-# Upcoming Topics
-
-- Multiplexer (MUX)
+- Half Adder
+- Full Adder
+- Multiplexer
 - Decoder
 - Encoder
+- Demultiplexer
+- Karnaugh Maps
+- Testbench Writing
+- Waveform Analysis
+- Git & GitHub
+
+---
+
+# Future Topics
+
 - Comparator
 - Priority Encoder
-- Multiplexer Applications
-- Karnaugh Maps (K-Maps)
-- Combinational Circuit Design
-- Sequential Circuits
-- Flip-Flops
-- Counters
+- Magnitude Comparator
+- Code Converters
+- SR Latch
+- D Flip-Flop
+- JK Flip-Flop
+- T Flip-Flop
 - Registers
+- Counters
+- Shift Registers
 - Finite State Machines (FSM)
-- Verilog Projects
-- FPGA Design
+- UART
+- ALU Design
+- Mini RTL Projects
+
+---
+
+# Tools for Simulation
+
+- Icarus Verilog Compiler
+- GTKWave Waveform Viewer
+
+---
+
+# Learning Outcome
+
+By the end of this repository, I aim to develop strong fundamentals in:
+
+- Digital Electronics
+- Verilog HDL
 - RTL Design
-- ASIC Design
+- VLSI Design
+- FPGA Design Flow
+- Simulation & Verification
 
 ---
 
-# Why This Repository?
+## Author
 
-This repository has been created to:
+**Asmita Savekar**
 
-- Document my daily VLSI learning journey.
-- Practice Verilog HDL consistently.
-- Build a strong digital design portfolio.
-- Track progress throughout the 90-day challenge.
-- Help other beginners learn Verilog and Digital Electronics.
+Engineering Student | Learning Verilog HDL | Digital Design | VLSI Enthusiast
 
----
-
-# Daily Learning Workflow
-
-Each day includes:
-
-1. Theory
-2. Handwritten Notes
-3. Verilog Coding
-4. Testbench Development
-5. Simulation using Icarus Verilog
-6. Waveform Verification using GTKWave
-7. Documentation
-8. GitHub Update
-
----
-
-# About This Journey
-
-This repository reflects my progress from learning the fundamentals of digital electronics to implementing and verifying digital circuits using Verilog HDL. Every topic is accompanied by theory, practical implementation, simulation, and documentation to strengthen my understanding of VLSI design.
-
-Thank you for visiting this repository.
+This repository is continuously updated as I progress through my Verilog HDL and VLSI learning journey.
