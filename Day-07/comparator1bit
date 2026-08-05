@@ -1,0 +1,70 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002e95b74bac0 .scope module, "comparator1bit_tb" "comparator1bit_tb" 2 3;
+ .timescale -9 -12;
+v000002e95b866140_0 .var "a", 0 0;
+v000002e95b8661e0_0 .net "aeqb", 0 0, L_000002e95b749c70;  1 drivers
+v000002e95b8ad850_0 .net "agbt", 0 0, L_000002e95b74a800;  1 drivers
+v000002e95b8ae660_0 .net "altb", 0 0, L_000002e95b863d50;  1 drivers
+v000002e95b8ae3e0_0 .var "b", 0 0;
+S_000002e95b865e70 .scope module, "uut" "comparator1bit" 2 11, 3 1 0, S_000002e95b74bac0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "agtb";
+    .port_info 3 /OUTPUT 1 "aeqb";
+    .port_info 4 /OUTPUT 1 "altb";
+L_000002e95b866280 .functor NOT 1, v000002e95b8ae3e0_0, C4<0>, C4<0>, C4<0>;
+L_000002e95b74a800 .functor AND 1, v000002e95b866140_0, L_000002e95b866280, C4<1>, C4<1>;
+L_000002e95b749770 .functor XOR 1, v000002e95b866140_0, v000002e95b8ae3e0_0, C4<0>, C4<0>;
+L_000002e95b749c70 .functor NOT 1, L_000002e95b749770, C4<0>, C4<0>, C4<0>;
+L_000002e95b74bcf0 .functor NOT 1, v000002e95b866140_0, C4<0>, C4<0>, C4<0>;
+L_000002e95b863d50 .functor AND 1, L_000002e95b74bcf0, v000002e95b8ae3e0_0, C4<1>, C4<1>;
+v000002e95b833560_0 .net *"_ivl_0", 0 0, L_000002e95b866280;  1 drivers
+v000002e95b8330e0_0 .net *"_ivl_4", 0 0, L_000002e95b749770;  1 drivers
+v000002e95b74bc50_0 .net *"_ivl_8", 0 0, L_000002e95b74bcf0;  1 drivers
+v000002e95b749bd0_0 .net "a", 0 0, v000002e95b866140_0;  1 drivers
+v000002e95b7496d0_0 .net "aeqb", 0 0, L_000002e95b749c70;  alias, 1 drivers
+v000002e95b74a760_0 .net "agtb", 0 0, L_000002e95b74a800;  alias, 1 drivers
+v000002e95b866000_0 .net "altb", 0 0, L_000002e95b863d50;  alias, 1 drivers
+v000002e95b8660a0_0 .net "b", 0 0, v000002e95b8ae3e0_0;  1 drivers
+    .scope S_000002e95b74bac0;
+T_0 ;
+    %vpi_call 2 20 "$dumpfile", "comparator1bit.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002e95b74bac0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002e95b866140_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002e95b8ae3e0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002e95b866140_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002e95b8ae3e0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002e95b866140_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002e95b8ae3e0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002e95b866140_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002e95b8ae3e0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 32 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "comparator1bit_tb.v";
+    "comparator1bit.v";
